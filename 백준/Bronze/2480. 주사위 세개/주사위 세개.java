@@ -16,12 +16,8 @@ public class Main {
             System.out.println(1000 + (a * 100));
         } else if (b == c) {
             System.out.println(1000 + (b * 100));
-        } else if (a > b && a > c) {
-            System.out.println(a * 100);
-        } else if (b > a && b > c) {
-            System.out.println(b * 100);
-        } else if (c > a && c > b) {
-            System.out.println(c * 100);
+        } else {
+            System.out.println(Math.max(a, Math.max(b, c)) * 100);
         }
     }
 }
