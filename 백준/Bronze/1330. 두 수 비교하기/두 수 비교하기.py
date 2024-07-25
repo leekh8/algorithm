@@ -1,7 +1,10 @@
-A, B = map(int, input().split())
-if A > B:
-    print(">")
-elif A < B:
-    print("<")
-elif A == B:
-    print("==")
+import sys
+
+a, b = map(int, sys.stdin.readline().split())
+
+if a > b:
+  print('>')
+elif a < b:
+  print('<')
+else:
+  print('==')
