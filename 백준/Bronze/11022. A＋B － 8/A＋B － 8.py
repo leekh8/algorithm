@@ -1,8 +1,7 @@
 import sys
 
-X = int(input())
+n = int(sys.stdin.readline())
 
-for i in range(X):
-    A, B = map(int, sys.stdin.readline().split())
-
-    print(f'Case #{i+1}: {A} + {B} = {A+B}')
+for i in range(1, n + 1):
+  a, b = map(int, sys.stdin.readline().split())
+  print('Case #{}:'.format(i),a, '+', b, '=', a + b)
