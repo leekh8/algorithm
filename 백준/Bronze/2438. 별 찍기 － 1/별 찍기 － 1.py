@@ -1,5 +1,6 @@
-X = int(input())
+import sys
 
-for i in range(1, X+1):
+n = int(sys.stdin.readline())
 
-    print('*' * i)
+for i in range(1, n + 1):
+  print('*' * i)
