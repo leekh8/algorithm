@@ -1,6 +1,10 @@
-A = int(input())
+import sys
 
-if (A % 4 == 0) & ((A % 400 == 0) | (A % 100 != 0)):
-    print("1")
+a = int(sys.stdin.readline())
+
+if a % 4 == 0 and a % 100 != 0:
+  print('1')
+elif a % 4 == 0 and a % 400 == 0:
+  print('1')
 else:
-    print("0")
+  print('0')
