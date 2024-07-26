@@ -1,5 +1,8 @@
-A = int(input())
-B = 0
-for i in range(1, A+1):
-    B += i
-print(B)
+import sys
+
+i = int(sys.stdin.readline())
+sum = 0
+
+for j in range(1, i + 1):
+  sum += j
+print(sum)
