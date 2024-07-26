@@ -1,9 +1,7 @@
-A = 1
-B = 1
+import sys
 
-while (A+B) != 0:
-    A, B = map(int, input().split())
-    if A + B != 0:
-        print(B+A)
-    else:
-        break
+a, b = map(int, sys.stdin.readline().split())
+
+while a != 0 and b != 0:
+  print(a + b)
+  a, b = map(int, sys.stdin.readline().split())
