@@ -1,10 +1,12 @@
-A, B, C = map(int, input().split())
+import sys
 
-if A == B and A == C:
-    print(10000+(A*1000))
-elif (A == B) or (A == C):
-    print(1000+(A*100))
-elif (B == C):
-    print(1000+(B*100))
+a, b, c = map(int, sys.stdin.readline().split())
+
+if a == b == c:
+  print(10000 + (a * 1000))
+elif a == b or a == c:
+  print(1000 + (a * 100))
+elif b == c:
+  print(1000 + (b * 100))
 else:
-    print(max(A, B, C)*100)
+  print(max(a, b, c) * 100)
