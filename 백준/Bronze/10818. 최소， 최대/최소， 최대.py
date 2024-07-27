@@ -1,4 +1,6 @@
-a = int, input().split()
-Y = list(map(int, input().split()))
+import sys
 
-print(min(Y), max(Y), end=' ')
+n = int(sys.stdin.readline())
+numbers = list(map(int, sys.stdin.readline().split()))
+
+print(min(numbers), max(numbers), end = ' ')
