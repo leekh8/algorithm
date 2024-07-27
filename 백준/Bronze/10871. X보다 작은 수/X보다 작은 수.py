@@ -1,7 +1,12 @@
-a, b = map(int, input().split())
-Y = list(map(int, input().split()))
-count = 0
+import sys
 
-for i in Y:
-    if (i < b):
-        print(i, end=' ')
+a, b = map(int, sys.stdin.readline().split())
+numbers = list(map(int, sys.stdin.readline().split()))
+answers = []
+
+for number in numbers:
+  if number < b:
+    answers.append(number)
+
+for answer in answers:
+  print(answer, end = ' ')
